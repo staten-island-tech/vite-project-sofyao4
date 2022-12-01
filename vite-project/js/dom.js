@@ -1,0 +1,2 @@
+const DOMSelectors = [];
+export { DOMSelectors };
