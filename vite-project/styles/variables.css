@@ -1,1 +1,11 @@
 /* for variables like colors etc. to apply for different themes.*/
+:root{
+    /*Typography*/
+    --h1: 7.594rem;
+    --h2: 5.063rem;
+    --p: 3.375rem;
+
+    /*Intentions for theming*/
+    --primary
+    --secondary
+}
