@@ -7,7 +7,7 @@ function productCard() {
   products.forEach((product) => {
     DOMSelectors.divMain.insertAdjacentHTML(
       "beforeend",
-      `<p> ${product.name} </p>`
+      `<p class="productCard"> ${product.name} </p>`
     );
   });
 }
