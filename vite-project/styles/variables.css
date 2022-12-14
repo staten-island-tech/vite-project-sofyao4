@@ -4,5 +4,17 @@
     --h1: 7.594rem;
     --h2: 5.063rem;
     --p: 3.375rem;
-}
+
     /*Intentions for theming*/
+
+    --light-blue: rgb(126, 225, 255);
+    --dark-blue: rgb(20, 148, 187);
+    --pink: rgb(253, 160, 225);
+
+    --light-orange: rgb(247, 150, 112);
+    --light-green: rgb(184, 255, 126);
+    --dark-orange: rgb(253, 99, 28);
+
+
+}
+
