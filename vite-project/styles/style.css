@@ -1,11 +1,24 @@
 @import url(variables.css);
+.cool{
+  --primary: var(--dark-blue);
+  --secondary: var(--light-blue);
+  --card-color: var(--pink);
+}
+.warm{
+  --primary: var(--dark-orange);
+  --secondary: var(--light-orange);
+  --card-color: var(--light-green);
+  
+}
 html,body,*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
   text-align: center;
+  background-color: var(--primary);
 }
+
 h1{
 font-size: var(--h1);
 }
@@ -15,14 +28,19 @@ h2{
 
 .contents{
 display: flex;
-justify-content: center;
+justify-content: space-evenly;
 flex-direction: row;
 flex-wrap: wrap;
 max-width: 100%;
 font-size: var(--p);
+background-color: var(--secondary);
 }
 .productCard{
-  margin: 10%;
+  margin: 1%;
+  padding: 20rem;
+  height:10%;
+  border:1rem;
+  background-color: var(--card-color);
   
 }
 .navBar{
