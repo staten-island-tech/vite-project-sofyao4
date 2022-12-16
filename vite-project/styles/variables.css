@@ -5,16 +5,23 @@
     --h2: 5.063rem;
     --p: 3.375rem;
 
-    /*Intentions for theming*/
-
+    /*Intentions for themes*/
     --light-blue: rgb(126, 225, 255);
-    --dark-blue: rgb(20, 148, 187);
-    --pink: rgb(253, 160, 225);
+    --dark-blue: rgb(73, 163, 190);
+    --pink: rgb(255, 195, 237);
 
     --light-orange: rgb(247, 150, 112);
-    --light-green: rgb(184, 255, 126);
-    --dark-orange: rgb(253, 99, 28);
-
-
+    --light-green: rgb(205, 255, 163);
+    --dark-orange: rgb(255, 123, 62);
 }
-
+/*Theme*/
+.cool{
+    --primary: var(--dark-blue);
+    --secondary: var(--light-blue);
+    --card-color: var(--pink);
+  }
+  .warm{
+    --primary: var(--dark-orange);
+    --secondary: var(--light-orange);
+    --card-color: var(--light-green);
+  }

@@ -7,7 +7,10 @@ function productCard() {
   products.forEach((product) => {
     DOMSelectors.divMain.insertAdjacentHTML(
       "beforeend",
-      `<p class="productCard"> ${product.name} </p>`
+      `<div class="productCard"> <p>${product.name}</p> 
+      ${product.img}
+      
+      Vegetarian: ${product.vegetarian} </div>`
     );
   });
 }

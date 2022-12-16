@@ -1,15 +1,5 @@
 @import url(variables.css);
-.cool{
-  --primary: var(--dark-blue);
-  --secondary: var(--light-blue);
-  --card-color: var(--pink);
-}
-.warm{
-  --primary: var(--dark-orange);
-  --secondary: var(--light-orange);
-  --card-color: var(--light-green);
-  
-}
+
 html,body,*{
   margin: 0;
   padding: 0;
