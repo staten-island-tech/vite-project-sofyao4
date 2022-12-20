@@ -8,20 +8,24 @@
     /*Intentions for themes*/
     --light-blue: rgb(126, 225, 255);
     --dark-blue: rgb(73, 163, 190);
-    --pink: rgb(255, 195, 237);
+    --light-pink: rgb(255, 195, 237);
+    --dark-pink: rgb(255, 111, 212);
 
     --light-orange: rgb(247, 150, 112);
     --light-green: rgb(205, 255, 163);
+    --dark-green: rgb(146, 255, 57);
     --dark-orange: rgb(255, 123, 62);
 }
 /*Theme*/
 .cool{
     --primary: var(--dark-blue);
     --secondary: var(--light-blue);
-    --card-color: var(--pink);
+    --card-color: var(--light-pink);
+    --card-border: var(--dark-pink);
   }
   .warm{
     --primary: var(--dark-orange);
     --secondary: var(--light-orange);
     --card-color: var(--light-green);
+    --card-border: var(--dark-green);
   }

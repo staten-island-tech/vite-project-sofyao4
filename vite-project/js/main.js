@@ -5,19 +5,12 @@ import "../styles/style.css";
 // put images in the public folder
 
 function productCard() {
-  function vegetarian() {
-    if (products.object.vegetarian === true) {
-      products.object.vegetarian === "yes";
-    } else {
-      products.object.vegetarian === "no";
-    }
-  }
   products.forEach((product) => {
     DOMSelectors.divMain.insertAdjacentHTML(
       "beforeend",
       `<div class="productCard"><p id="prodName">${product.name}</p>
       <img src="${product.img}" class="img"> 
-      <p id="prodIsVeg">Vegetarian: ${product.vegetarian}</p> 
+      <p id="prodIsVeg">Vegetarian:${product.vegetarian}</p> 
       <p id="prodPrice">Price: $${product.price}</p>
       <p id="prodIsInStock">In Stock: ${product.inStock}</p></div>
       `
@@ -37,3 +30,19 @@ function changeTheme() {
   });
 }
 changeTheme();
+DOMSelectors.filterVeg.addEventListener("click", function () {
+  DOMSelectors.divMain.innerHTML = "";
+  products
+    .filter((products) => products.vegetarian.includes("Yes"))
+    .forEach((product) => {
+      DOMSelectors.divMain.insertAdjacentHTML(
+        "beforeend",
+        `<div class="productCard"><p id="prodName">${product.name}</p>
+        <img src="${product.img}" class="img"> 
+        <p id="prodIsVeg">Vegetarian:${product.vegetarian}</p> 
+        <p id="prodPrice">Price: $${product.price}</p>
+        <p id="prodIsInStock">In Stock: ${product.inStock}</p></div>
+        `
+      );
+    });
+});
