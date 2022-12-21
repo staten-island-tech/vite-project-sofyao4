@@ -5,5 +5,6 @@ const DOMSelectors = {
   themeButton: document.querySelector(".navTheme"),
   filterVeg: document.querySelector("#filterVegetarian"),
   filterStock: document.querySelector("#filterInStock"),
+  reset: document.querySelector("#reset"),
 };
 export { DOMSelectors };
