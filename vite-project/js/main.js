@@ -7,7 +7,7 @@ import "../styles/style.css";
 products.forEach((product) => {
   DOMSelectors.divMain.insertAdjacentHTML(
     "beforeend",
-    `<div class="productCard"><p id="prodName">${product.name}</p>
+    `<div class="productCard"><h3 id="prodName">${product.name}</h3>
       <img src="${product.img}" class="img"> 
       <p id="prodIsVeg">Vegetarian:${product.vegetarian}</p> 
       <p id="prodPrice">Price: $${product.price}</p>
@@ -26,35 +26,23 @@ DOMSelectors.themeButton.addEventListener("click", function () {
   }
 });
 
-DOMSelectors.filterVeg.addEventListener("click", function () {
-  DOMSelectors.divMain.innerHTML = "";
-  products
-    .filter((products) => products.vegetarian.includes("Yes"))
-    .forEach((product) => {
-      DOMSelectors.divMain.insertAdjacentHTML(
-        "beforeend",
-        `<div class="productCard"><p id="prodName">${product.name}</p>
+function filterVeg() {
+  DOMSelectors.filterVeg.addEventListener("click", function () {
+    DOMSelectors.divMain.innerHTML = "";
+    products
+      .filter((products) => products.vegetarian.includes("Yes"))
+      .forEach((product) => {
+        DOMSelectors.divMain.insertAdjacentHTML(
+          "beforeend",
+          `<div class="productCard"><h3 id="prodName">${product.name}</h3>
         <img src="${product.img}" class="img"> 
         <p id="prodIsVeg">Vegetarian:${product.vegetarian}</p> 
         <p id="prodPrice">Price: $${product.price}</p>
         <p id="prodIsInStock">In Stock: ${product.inStock}</p></div>
         `
-      );
-    });
-});
-DOMSelectors.filterStock.addEventListener("click", function () {
-  DOMSelectors.divMain.innerHTML = "";
-  products
-    .filter((products) => products.inStock.includes("Yes"))
-    .forEach((product) => {
-      DOMSelectors.divMain.insertAdjacentHTML(
-        "beforeend",
-        `<div class="productCard"><p id="prodName">${product.name}</p>
-      <img src="${product.img}" class="img"> 
-      <p id="prodIsVeg">Vegetarian:${product.vegetarian}</p> 
-      <p id="prodPrice">Price: $${product.price}</p>
-      <p id="prodIsInStock">In Stock: ${product.inStock}</p></div>
-      `
-      );
-    });
-});
+        );
+      });
+  });
+}
+
+DOMSelectors.reset.addEventListener("click", function () {});
