@@ -7,26 +7,29 @@
     --p: 3.375rem;
 
     /*Intentions for themes*/
-    --light-blue: rgb(126, 225, 255);
-    --dark-blue: rgb(73, 163, 190);
-    --light-pink: rgb(255, 195, 237);
-    --dark-pink: rgb(255, 111, 212);
 
-    --light-orange: rgb(247, 150, 112);
-    --light-green: rgb(205, 255, 163);
-    --dark-green: rgb(146, 255, 57);
-    --dark-orange: rgb(255, 123, 62);
+    --purle: #423558;
+    --dark-purple:  #382d4b;
+    --light-purple:#4c3d65;
+    --sand: #c6b488;
+
+    --white: #fff9ec;
+    --dark-white: #e6e0d4;
+    --light-white: #ffffff;
+    --black: #333a3f;
+
 }
 /*Theme*/
-.cool{
-    --primary: var(--dark-blue);
-    --secondary: var(--light-blue);
-    --card-color: var(--light-pink);
-    --card-border: var(--dark-pink);
+.dark{
+  --primary: var(--purle);
+  --card-shadow1:var(--dark-purple);
+  --card-shadow2:var(--light-purple);
+  --font-color:var(--sand);
+
   }
-  .warm{
-    --primary: var(--dark-orange);
-    --secondary: var(--light-orange);
-    --card-color: var(--light-green);
-    --card-border: var(--dark-green);
+.light{
+    --primary: var(--white);
+    --card-shadow1:var(--dark-white);
+    --card-shadow2:var(--light-white);
+    --font-color:var(--black);
   }

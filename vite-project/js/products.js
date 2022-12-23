@@ -42,7 +42,7 @@ const products = [
     inStock: "No",
   },
   {
-    name: "Cheeseburger",
+    name: "Cheese- burger",
     vegetarian: "No",
     price: 6,
     img: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=902&q=80",

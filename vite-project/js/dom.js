@@ -4,5 +4,6 @@ const DOMSelectors = {
   divMain: document.getElementById("content-box"),
   themeButton: document.querySelector(".navTheme"),
   filterVeg: document.querySelector("#filterVegetarian"),
+  reset: document.querySelector("#reset"),
 };
 export { DOMSelectors };
