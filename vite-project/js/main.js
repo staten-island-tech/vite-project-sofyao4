@@ -7,6 +7,12 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 //dont forget about encapsulation of functions in an object.
 
+function makeCard(array) {
+  array.forEach((product) => {
+    htmlthing(product);
+  });
+}
+
 function htmlthing(object) {
   DOMSelectors.divMain.insertAdjacentHTML(
     "beforeend",
@@ -18,14 +24,7 @@ function htmlthing(object) {
       `
   );
 }
-
-function makeCard(array) {
-  array.forEach((product) => {
-    htmlthing(product);
-  });
-}
 makeCard(products);
-
 DOMSelectors.themeButton.addEventListener("click", function () {
   if (document.body.classList.contains("dark")) {
     document.body.classList.add("light");
