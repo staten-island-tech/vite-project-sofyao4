@@ -7,22 +7,21 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 //dont forget about encapsulation of functions in an object.
 
-function makeCard(array) {
-  array.forEach((product) => {
-    htmlthing(product);
-  });
-}
-
 function htmlthing(object) {
   DOMSelectors.divMain.insertAdjacentHTML(
     "beforeend",
     `<div class="productCard" data-aos="fade-up"><h3 id="prodName">${object.name}</h3>
-      <img src="${object.img}" class="img"> 
+      <img src="${object.image}" class="img" alt="${object.alt}"> 
       <p id="prodIsVeg">Vegetarian:${object.vegetarian}</p> 
       <p id="prodPrice">Price: $${object.price}</p>
       <p id="prodIsInStock">In Stock: ${object.inStock}</p></div>
       `
   );
+}
+function makeCard(array) {
+  array.forEach((product) => {
+    htmlthing(product);
+  });
 }
 makeCard(products);
 DOMSelectors.themeButton.addEventListener("click", function () {
